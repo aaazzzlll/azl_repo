@@ -24,3 +24,5 @@
 
 7. 从前序与中序遍历序列构造二叉树
 使用哈希表存储中序序列中的[值-索引]映射，降低时间复杂度。定义递归函数myBuildTree(preLeft,preRight,inLeft,inRight),递归终止条件是preLeft>preRight，sizeLeftSubtree连接前序和中序的边界，是拆分左右子树的关键
+
+8. 路径总和III
