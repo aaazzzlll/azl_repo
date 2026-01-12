@@ -23,4 +23,4 @@
 使用前序遍历递归算法得到保存二叉树前序遍历序列的list，然后将里面的节点left赋值为null，right设为下一个节点
 
 7. 从前序与中序遍历序列构造二叉树
-使用哈希表存储中序序列中的[值-索引]映射，降低时间复杂度。定义递归函数myBuildTree(preLeft,preRight,inLeft,inRight),递归终止条件是preLeft>preRight
+使用哈希表存储中序序列中的[值-索引]映射，降低时间复杂度。定义递归函数myBuildTree(preLeft,preRight,inLeft,inRight),递归终止条件是preLeft>preRight，sizeLeftSubtree连接前序和中序的边界，是拆分左右子树的关键
