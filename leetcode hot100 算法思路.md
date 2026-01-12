@@ -26,4 +26,4 @@
 使用哈希表存储中序序列中的[值-索引]映射，降低时间复杂度。定义递归函数myBuildTree(preLeft,preRight,inLeft,inRight),递归终止条件是preLeft>preRight，sizeLeftSubtree连接前序和中序的边界，是拆分左右子树的关键
 
 8. 路径总和III
-使用递归算法，pathSum遍历所有节点，把每个节点当做路径的起点
+使用递归算法，pathSum遍历所有节点，把每个节点当做路径的起点。rootSum从当前起点出发，向下遍历所有路径，统计和为targetSum的路径数
