@@ -68,6 +68,8 @@ mid=left+Math.floor((right-left)/2)  避免left+right溢出
 此处使用`left < right`，当测试用例是单元素数组时就不会进入循环，所以在最后的return判断中必须写的是`nums[left]<target?left+1:left` 
 
 2. 搜索二维矩阵
+
+
 3. 在排序数组中查找元素的第一个和最后一个位置
 4. 搜索旋转排序数组
 5. 寻找旋转排序数组中的最小值
