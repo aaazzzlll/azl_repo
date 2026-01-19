@@ -78,7 +78,7 @@ mid=left+Math.floor((right-left)/2)  避免left+right溢出
 需要额外判断边界条件`nums.length===0`和`nums.length===1`
 
 5. 寻找旋转排序数组中的最小值
-
+通过二分查找，对比中间值 `nums [mid]` 和右边界值 `nums [right]`，若 `nums [mid]` 更小则最小值在左半区（收缩右边界到 mid），否则最小值在右半区（收缩左边界到 mid+1），最终收敛到 left=right 的位置即为最小值下标
 
 6. 寻找两个正序数组的中位数
 
