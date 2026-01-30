@@ -101,7 +101,9 @@ mid=left+Math.floor((right-left)/2)  避免left+right溢出
 5. 柱状图中最大的矩形
 # 堆
 快速排序
+```javascript
 
+```
 堆排序
 
 1. 数组中的第K个最大元素
