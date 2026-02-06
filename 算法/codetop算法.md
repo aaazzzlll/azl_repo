@@ -1,3 +1,45 @@
+```javascript
+const fs = require('fs');
+
+// --- 第一步：这是你熟悉的 LeetCode 写法 ---
+// 你就当这里是力扣的编辑器，完全不用管输入怎么来的
+function twoSum(a, b) {
+    return a + b;
+}
+
+// --- 第二步：这是你需要背下来的“壳” ---
+function main() {
+    // 1. 读数据（死记硬背）
+    const input = fs.readFileSync(0, 'utf-8');
+    const tokens = input.trim().split(/\s+/);
+    let cur = 0;
+    const nextInt = () => parseInt(tokens[cur++]);
+
+    // 2. 准备参数（把数据喂给你的函数）
+    // 假设题目说是一组测试数据，两个数
+    const a = nextInt();
+    const b = nextInt();
+
+    // 3. 调用你的 LeetCode 函数并打印
+    const ans = twoSum(a, b); 
+    console.log(ans);
+}
+
+main();
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
 1. 无重复字符的最长子串
 采用**滑动窗口（双指针）+ 哈希集合**，左指针遍历字符串作为窗口左边界，右指针尽可能扩展窗口右边界（确保窗口内无重复字符），同时更新最长无重复子串长度，最终得到结果。
 注意：右边界初始值为-1
