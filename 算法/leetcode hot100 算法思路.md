@@ -4,7 +4,7 @@
 1. LRU缓存 
 使用双向链表和哈希表，哈希表存储（key，node）键值对，node包含key，value，prev，next。该双向链表还需要设置伪头部和伪尾部，这样在添加节点和删除节点的时候就不需要检查相邻的节点是否存在。
 在LRUCache的构造函数中，定义了addToHead、moveToHead
-、removeHead、removeTail四个实例方法
+、removeNode、removeTail四个实例方法
 
 对于 get 操作，首先判断 key 是否存在：如果 key 不存在，则返回 −1；如果 key 存在，则 key 对应的节点是最近被使用的节点。通过哈希表定位到该节点在双向链表中的位置，并将其移动到双向链表的头部，最后返回该节点的值。
 
