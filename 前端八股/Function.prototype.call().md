@@ -4,3 +4,5 @@ func.call(thisArg, arg1, arg2, ... ,argN)
 
 如果省略`thisArg`参数，则默认为`undefined`。在非严格模式下，`this`值将被替换为`globalThis`(类似于全局对象)
 在严格模式下，`this` 的值不会被替换，因此它保持为 `undefined`。
+
+当使用call/apply/bind绑定this时，传入的第一个参数（thisArg）不管是什么类型，最终都会被当做“对象”来对待，如果它本来就不是对象，
