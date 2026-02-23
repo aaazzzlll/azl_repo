@@ -6,3 +6,4 @@ func.call(thisArg, arg1, arg2, ... ,argN)
 在严格模式下，`this` 的值不会被替换，因此它保持为 `undefined`。
 
 当使用call/apply/bind绑定this时，传入的第一个参数（thisArg）不管是什么类型，最终都会被当做“对象”来对待，如果它本来就不是对象，JavaScript会自动将它包装成对应的对象类型
+所以在手写call的时候也要满足call的规范要求，需要对原始值进行包装(Object(thisArg))
