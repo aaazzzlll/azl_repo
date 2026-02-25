@@ -2,6 +2,5 @@
 
 保留注释方法：
 	1. 使用comments选项（Vue 2）：在 Vue 2 中，可以通过在组件选项中设置 `comments: true` 来保留模板中的 HTML 注释
-
-	2. 使用v-pre
-	3. 使用特殊注释语法（Vue 3）
+	2. 使用v-pre：
+	3. 使用特殊注释语法（Vue 3）：
