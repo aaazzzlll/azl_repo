@@ -25,4 +25,4 @@
 Vue默认会复用组件实例，当从/space/1跳转到/space/2时，因为这两个路径使用的是同一个组件，Vue为了节省性能，不会销毁旧的组件再重新创建一个组件。所以需要再SpaceDetailPage添加watch，监听空间id的变化
 
 
-在开发协同编辑模块的时候，使用的是[webSocket](../前端八股/webSocket.md) 
+在开发协同编辑模块的时候，使用的是[webSocket](../前端八股/webSocket.md)
