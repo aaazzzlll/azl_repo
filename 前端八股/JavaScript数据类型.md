@@ -1,4 +1,4 @@
-基本数据类型：
+基本数据类型（存储在栈中）：
 	undefined
 	null
 	number
@@ -7,7 +7,7 @@
 	symbol（ES6）
 	bigint   (ES2020)
 
-引用数据类型：
+引用数据类型（存储在堆中)：
 	object（包括数组、函数、日期等）
 
 
