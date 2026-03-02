@@ -1,0 +1,1 @@
+**`Object.setPrototypeOf()`** 静态方法可以将一个指定对象的原型（即内部的 `[[Prototype]]` 属性）设置为另一个对象或者 [`null`](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/null)。
