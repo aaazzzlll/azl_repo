@@ -1,4 +1,12 @@
 WeakMap的键必须是对象，不能是原始值
+WeakMap不支持迭代以及`keys(),values(),entries()`方法，所以没有办法获取WeakMap的所有键或值
+WeakMap只有以下方法：
+- `weakMap.get(key)`
+- `weakMap.set(key, value)`
+- `weakMap.delete(key)`
+- `weakMap.has(key)`
+
+
 ```javascript
 let a = { self: null };
 a.self = a;  // 循环引用
