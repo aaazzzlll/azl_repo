@@ -1,6 +1,3 @@
 views:
   - type: table
     name: 表格
-    filters:
-      and:
-        - file.ctime == "2026-02-28"
