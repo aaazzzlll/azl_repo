@@ -17,5 +17,6 @@ tags:
 `4xx`类：客户端错误，请求有问题
 	400 Bad Request 客户端请求的报文有错误
 	403 Forbidden 服务器禁止访问资源
-	404 Not Found 表示请求的
-`5xx`类：服务器错误
+	404 Not Found 表示请求的资源在服务器上不存在或未找到
+`5xx`类：客户端请求报文正确，但服务器处理时内部发生错误
+	500 Internal Server 
