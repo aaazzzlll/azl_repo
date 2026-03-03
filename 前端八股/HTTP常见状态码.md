@@ -11,8 +11,8 @@ tags:
 	204 No Content 也是常见的成功状态码，但响应头没有body数据
 	206 Partial Content 应用于HTTP分块下载或断点续传，表示响应返回的body数据是资源的一部分
 `3xx`类：客户端请求的资源发生变动，需要客户端用新的URL重新发送请求获取资源，即重定向
-	301 Moved Permanently 永久重定向
-	302
+	301 Moved Permanently 永久重定向，说明请求的资源已经不存在，需改用新的URL再次访问
+	302 Found 临时重定向，说明请求的资源还在，但暂时需要用另一个UR
 	304 Not Modified表示资源未修改，客户端可以使用缓存
 `4xx`类：客户端错误，请求有问题
 `5xx`类：服务器错误
