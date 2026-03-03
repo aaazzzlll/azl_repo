@@ -19,4 +19,6 @@ tags:
 	403 Forbidden 服务器禁止访问资源
 	404 Not Found 表示请求的资源在服务器上不存在或未找到
 `5xx`类：客户端请求报文正确，但服务器处理时内部发生错误
-	500 Internal Server 
+	500 Internal Server Error 
+	501 Not Implemented 表示客户端请求的功能还不支持
+	502 Bad Gateway
