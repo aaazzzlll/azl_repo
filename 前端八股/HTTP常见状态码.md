@@ -21,5 +21,6 @@ tags:
 `5xx`类：客户端请求报文正确，但服务器处理时内部发生错误
 	500 Internal Server Error 服务器内部错误
 	501 Not Implemented 表示客户端请求的功能还不支持
-	502 Bad Gateway 
+	502 Bad Gateway 通常是服务器作为网关或代理时返回的错误码，表示服务器自身正常，访问后端服务器发生错误
 	503 Service Unavailable 表示服务器当前很忙，暂时无法响应客户端
+	504 Gateway Timeout 网关超时，由作为代理或网关的服务器使用，表示不能及时从远程服务器获得应答
