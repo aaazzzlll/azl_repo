@@ -9,8 +9,8 @@ tags:
 `2xx`类：请求处理成功
 	200 OK 最常见的成功状态码，表示一切正常，服务器返回的响应头都会有body数据
 	204 No Content 也是常见的成功状态码，但响应头没有body数据
-	206 Partial Content 应用于HTTP分块下载或
-`3xx`类：重定向，需要进一步操作以完成请求
+	206 Partial Content 应用于HTTP分块下载或断点续传，表示响应返回的body数据是资源的一部分
+`3xx`类：
 	301
 	302
 	304 Not Modified表示资源未修改，客户端可以使用缓存
