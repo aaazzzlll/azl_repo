@@ -7,8 +7,8 @@ tags:
 请求报文由三部分组成：请求行+请求头+请求体
 **请求行**：包括请求方法、请求URL、HTTP协议版本
 **请求头**：包含请求的附加信息
-	Host：指定要请求的资源所在的主机和
-	Accept
+	Host：指定要请求的资源所在的主机和端口
+	Accept：
 	User-Agent
 	Range
 	Connection
