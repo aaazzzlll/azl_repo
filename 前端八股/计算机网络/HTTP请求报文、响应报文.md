@@ -11,5 +11,5 @@ tags:
 	Accept：告诉服务端，客户端接收什么类型的响应
 	User-Agent：告诉服务器，客户端使用的操作系统、浏览器版本和名称
 	Range：用于指定请求内容的范围，如断点续传时表示请求的字节范围
-	Connection：决定
-	Cache-Control：
+	Connection：决定当前事务完成后，是否关闭连接（keep-alive/close）
+	Cache-Control：对缓存进行控制，
