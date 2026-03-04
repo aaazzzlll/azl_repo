@@ -13,3 +13,5 @@ tags:
 	Range：用于指定请求内容的范围，如断点续传时表示请求的字节范围
 	Connection：决定当前事务完成后，是否关闭连接（keep-alive/close）
 	Cache-Control：设置缓存的策略，no-store（不缓存），max-age（最大缓存时间）
+**空行**：表示请求头部结束
+**请求体**：
