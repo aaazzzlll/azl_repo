@@ -8,8 +8,8 @@ tags:
 **请求行**：包括请求方法、请求URL、HTTP协议版本
 **请求头**：包含请求的附加信息
 	Host：指定要请求的资源所在的主机和端口
-	Accept：
-	User-Agent
-	Range
-	Connection
-	Cache-Control
+	Accept：告诉服务端，客户端接收什么类型的响应
+	User-Agent：告诉服务器，客户端使用的操作系统、浏览器版本和名称
+	Range：用于指定请求内容的范围，如断点续传时表示请求的字节范围
+	Connection：决定
+	Cache-Control：
