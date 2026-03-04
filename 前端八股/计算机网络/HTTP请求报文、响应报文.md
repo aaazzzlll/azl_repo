@@ -11,3 +11,5 @@ tags:
 	Accept
 	User-Agent
 	Range
+	Connection
+	Cache-Control
