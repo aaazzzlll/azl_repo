@@ -14,5 +14,5 @@
 	栈：内存分配效率高，自动管理（由编译器分配和释放）
 	堆：内存分配灵活，但需要开发者手动管理内存（JS引擎通过垃圾回收机制（GC）自动回收）
 
-精确判断数据类型的方法：[Object.prototype.toString().call(obj)](Object.prototype.toString().call(obj).md)
+精确判断数据类型的方法：[Object.prototype.toString().call(obj)](../手写/Object.prototype.toString().call(obj).md)
 
