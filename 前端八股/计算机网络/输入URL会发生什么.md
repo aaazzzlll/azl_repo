@@ -1,7 +1,7 @@
 ---
 Date: 2026-03-04
 upstream: " 父卡片"
-related: 相关卡1
+related: "[[DNS解析过程]]"
 tags:
 ---
 1. DNS解析：浏览器会发起一个DNS请求到DNS服务器，将域名解析为服务器的IP地址
