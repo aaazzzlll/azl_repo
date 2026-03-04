@@ -12,4 +12,4 @@ tags:
 	User-Agent：告诉服务器，客户端使用的操作系统、浏览器版本和名称
 	Range：用于指定请求内容的范围，如断点续传时表示请求的字节范围
 	Connection：决定当前事务完成后，是否关闭连接（keep-alive/close）
-	Cache-Control：对缓存进行控制，
+	Cache-Control：设置缓存的策略，no-store（不缓存），max-age（最大缓存时间）
