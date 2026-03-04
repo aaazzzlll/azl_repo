@@ -12,3 +12,10 @@ tags:
 
 
 2. 协商缓存
+浏览器在本地缓存过期后，浏览器发送一个带有缓存标记的请求，服务端根据资源是否更新告诉客户端是否可以使用缓存
+
+目前主要有两对“Header”组合来实现这个机制：
+	1. Last-Modified和If-Modified-Since
+	响应头中的Last-Modified：指定资源的最后修改时间
+	请求头中的If-Modified-Since：
+	2. ETag和If-None-Match
