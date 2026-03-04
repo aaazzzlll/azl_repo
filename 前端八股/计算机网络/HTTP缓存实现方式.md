@@ -20,4 +20,7 @@ tags:
 	请求头中的If-Modified-Since：客户端在请求时携带Last-Modified，服务器判断资源是否已被修改，如果未修改返回304
 	2. **ETag和If-None-Match**
 	响应头中的ETag：唯一标识响应资源，服务器通过返回ETag判断资源是否变化
-	请求头中的If-None-Match：
+	请求头中的If-None-Match：客户端在请求时将If-None-Match 值设置为 Etag 的值，服务器判断是否存在差异，如果没有则返回304 Not Modified
+
+
+协商缓存这两个字段都需要配合强制缓存的Cache-Control来使用，只有在未能命中强制缓存的时候，才能发起带有协商缓存字段的请求
