@@ -3,6 +3,6 @@
 	pop()
 	shift()
 	unshift()
-	splice()
+	splice()就地移除或替换已存在的元素或添加新元素
 	sort()
 	reverse()
