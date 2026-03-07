@@ -7,7 +7,10 @@
 2. Prettier：统一代码格式
 	在项目中Prettier我使用的是默认规则，保存时自动格式化
 3. OpenAPI：自动生成API请求代码和TypeScript类型，将后端接口文档变成可以直接调用的函数
-	
+	在openapi.config.js文件中我配置了三条：
+		生成的请求代码使用我自定义的Axios封装
+		从后端Swagger文档读接口定义
+		生成到我的src目录下，openapi会自动在src下创建一个api目录来保存自动生成的请求代码和TS类型
 
 
 
