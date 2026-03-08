@@ -21,3 +21,6 @@ tags:
 	6. `Promise.prototype.then()` - 添加成功回调
 	7. `Promise.prototype.catch()` - 添加失败回调
 	8. `Promise.prototype.finally()` - 无论成功失败都执行
+
+```
+```
