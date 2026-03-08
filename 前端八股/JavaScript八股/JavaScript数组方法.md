@@ -7,4 +7,11 @@
 	sort()
 	reverse()
 
-不会改变
+不会改变原数组的方法：
+	slice()
+	concat()
+	join()
+	map
+	filter()
+	every()
+	some()

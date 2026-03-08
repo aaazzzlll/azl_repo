@@ -1,7 +1,7 @@
 ---
 Date: 2026-03-08
 upstream: "[[../JavaScript八股/异步方案|异步方案]]"
-related: 相关卡1
+related: "[[../手写/手写题|手写题]]"
 tags:
   - Promise
 ---
