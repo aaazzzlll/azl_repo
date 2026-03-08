@@ -6,5 +6,5 @@
 AJAX：一种异步网络请求的技术思想，不刷新页面就能异步获取数据
 
 实现AJAX思想的具体API：
-	XMLHttpRequest：
-	fetch：
+	XMLHttpRequest：传统底层API
+	fetch：现代底层API
