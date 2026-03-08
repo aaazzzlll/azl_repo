@@ -6,3 +6,8 @@ tags:
   - Promise
 ---
 **Promise是异步编程的解决方案，表示一个异步操作的最终完成或失败**
+
+**状态**：
+	pending：初始状态
+	fulfilled：操作成功完成
+	rejected：操作失败
