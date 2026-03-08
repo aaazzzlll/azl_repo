@@ -37,3 +37,9 @@ Promise.allSettled([
 //   { status: 'rejected', reason: Error: 一个错误 }
 // ]
 ```
+
+JS 原生 Promise 实例的核心属性：
+1. **`[[PromiseState]]`（内部状态）**：不可直接访问，值为 `pending`/`fulfilled`/`rejected`，状态不可逆；
+2. **`[[PromiseResult]]`（结果值）**：不可直接访问，`fulfilled` 时存成功结果，`rejected` 时存失败原因；
+3. **原型方法**：`then()`/`catch()`/`finally()`（用于注册回调）；
+4. **静态方法**：`Promise.resolve()`/`Promise.reject()`/`Promise.all()` 等（挂载在 Promise 构造函数上）。
