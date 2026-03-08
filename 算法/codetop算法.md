@@ -524,8 +524,14 @@ $$
 递归：二叉树递归遍历的模板写法
 ```javascript
 const res=[]
-const preorder=()=>{
+const preorder=(root)=>{
+	if(!root)return
+	res.push(root.val)
+	preorder(root.left)
+	preorder(root.right)
 }
+preorder(root)
+return res
 ```
 
 迭代：借助栈结构，先将根节点入栈，循环弹出栈顶节点并存储值，再按 “先右后左” 的顺序将子节点入栈（利用栈后进先出特性保证左子树先处理），最终实现根→左→右的前序遍历。
