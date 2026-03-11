@@ -14,5 +14,9 @@ tags:
 	- 当配置项设置`{deep:true}`，可以监听内部属性变化。默认watch监听对象时，仅监听对象引用变化
 
 computed和watch的性能对比：
-	高频访问的纯计算场景：computed更高效
-	低频触发的副作用场景：watch更高效
+	1. **高频访问的纯计算场景**：computed更高效
+	2. **低频触发的副作用场景**：watch更高效，且可通过debounce、throttle优化高频触发，性能可控
+	3. **深度监听场景**：监听对象时，watch精准监听>computed>watch深度监听
+		computed：自动追踪用到的属性，无需深度监听，性能中等
+		watch精准监听（`() => user.info.age`）：仅监听目标属性，性能最优
+		watch深度监听（`deep: true`）：遍历对象所有层级属性，大对象会产生明显性能开销
