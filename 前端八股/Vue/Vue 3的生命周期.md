@@ -4,7 +4,7 @@ upstream: " 父卡片"
 related: 相关卡1
 tags:
 ---
-**Vue 3生命周期分4大阶段（创建，挂载，更新，销毁）**
+**Vue 3生命周期分4大阶段（创建，挂载，更新，卸载）**
 `<script setup>`的代码执行时机等同于beforeCreate+created
 
 
@@ -20,6 +20,6 @@ tags:
 #### 1.onBeforeUpdate
 #### 2.onUpdated
 
-### 销毁
+### 卸载
 #### 1.onBeforeUnmount（Vue 3）/beforeDestroy（Vue 2）
 #### 2.onUnmounted（Vue 3）/destroyed（Vue 2）
