@@ -1,7 +1,7 @@
 ---
 Date: 2026-03-11
 upstream: " 父卡片"
-related: 相关卡1
+related: "[[箭头函数和普通函数的区别]]"
 tags:
 ---
 1. **let/const**  —— 块级作用域变量声明
