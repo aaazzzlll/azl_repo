@@ -9,8 +9,7 @@ tags:
 
 
 ### 创建
-#### 1.beforeCreate
-#### 2.created
+#### 1.setup
 
 ### 挂载
 #### 1.onBeforeMount
@@ -21,5 +20,5 @@ tags:
 #### 2.onUpdated
 
 ### 卸载
-#### 1.onBeforeUnmount（Vue 3）/beforeDestroy（Vue 2）
-#### 2.onUnmounted（Vue 3）/destroyed（Vue 2）
+#### 1.onBeforeUnmount
+#### 2.onUnmounted
