@@ -3,7 +3,7 @@
 	pop()
 	shift()
 	unshift()
-	splice()就地移除或替换已存在的元素或添加新元素
+	splice(start,deleteCount,item1 , ... , item N)就地移除或替换已存在的元素或添加新元素
 	sort()
 	reverse()
 
