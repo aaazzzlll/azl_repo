@@ -1,6 +1,7 @@
 
 ==ACM模式输入输出模版==
 ```javascript
+//引入Node.js的文件系统模块
 const fs = require('fs');
 
 // --- 第一步：这是你熟悉的 LeetCode 写法 ---
@@ -11,8 +12,11 @@ function twoSum(a, b) {
 
 // --- 第二步：这是你需要背下来的“壳” ---
 function main() {
-    // 1. 读数据（死记硬背）
+    // 1. 读数据
+    //同步读取文件的函数，0代表标准输入，utf-8指定编码格式
+    //input是一个包含所有内容的巨大字符串
     const input = fs.readFileSync(0, 'utf-8');
+    //数据切分，\s表示空格，+表示一个或多个
     const tokens = input.trim().split(/\s+/);
     let cur = 0;
     const nextInt = () => parseInt(tokens[cur++]);
