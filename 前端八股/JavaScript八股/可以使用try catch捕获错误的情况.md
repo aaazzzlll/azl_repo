@@ -10,7 +10,9 @@ tags:
 ```javascript
 try{
 	new Promise((resolve,reject)=>{
-		reject(new Error())
+		reject(new Error("error"))
 	})
+}catch(err){
+	console.log("捕获到错误：",err)
 }
 ```
