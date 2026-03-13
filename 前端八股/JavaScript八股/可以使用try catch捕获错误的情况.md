@@ -17,3 +17,5 @@ try{
 	console.log("捕获到错误：",err)//不会执行这一行
 }
 ```
+
+2. **async/await下的try/catch可以捕获Promise错误**
