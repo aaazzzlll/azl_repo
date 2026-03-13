@@ -8,5 +8,9 @@ tags:
 
 1. try/catch无法捕获普通的Promise错误
 ```javascript
-try { // Promise 异步错误，try/catch 无法捕获 new Promise((resolve, reject) => { reject(new Error("Promise 出错了")); }); } catch (err) { console.log("捕获到错误：", err); // 不会执行这行 }
+try{
+	new Promise((resolve,reject)=>{
+		reject(new Error())
+	})
+}
 ```
