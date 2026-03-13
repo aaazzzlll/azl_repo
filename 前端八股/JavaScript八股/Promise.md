@@ -15,12 +15,13 @@ tags:
 **方法**：
 	1. `Promise.resolve()` - 返回一个 resolved 状态的 Promise
 	2. `Promise.reject()` - 返回一个 rejected 状态的 Promise
-	3. `Promise.all()` - 所有 Promise 都成功时返回一个包含所有兑现值的数组，返回的也是一个Promise
-	4. `Promise.race()` - 第一个完成的 Promise 的结果
-	5. `Promise.allSettled()` - 所有 Promise 完成后返回结果
-	6. `Promise.prototype.then()` - 添加成功回调
-	7. `Promise.prototype.catch()` - 添加失败回调
-	8. `Promise.prototype.finally()` - 无论成功失败都执行
+	3. `Promise.all()` - 并行执行多个 Promise，全部成功返回结果数组（顺序和输入一致），任意一个失败立即返回第一个失败原因
+	4. `Promise.race()` - 多个 Promise 竞速，返回第一个完成（成功 / 失败）的 Promise 结果
+	5. `Promise.allSettled()` - 等待所有 Promise 完成（无论成功 / 失败），返回每个 Promise 的状态和结果
+	6. `Promise.any()`- 多个 Promise 中返回第一个成功的结果，全部失败则抛出 AggregateError
+	7. `Promise.prototype.then()` - 添加成功回调
+	8. `Promise.prototype.catch()` - 添加失败回调
+	9. `Promise.prototype.finally()` - 无论成功失败都执行
 
 ```javascript
 Promise.allSettled([
