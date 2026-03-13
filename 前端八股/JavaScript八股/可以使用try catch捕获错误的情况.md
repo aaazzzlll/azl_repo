@@ -19,4 +19,4 @@ try{
 ```
 
 2. **async/await下的try/catch可以捕获Promise错误**
-如果使用async/await，await会暂停异步执行，让Promise的执行
+如果使用async/await，await会暂停异步执行，让Promise的执行同步化，此时try/catch可以捕获Promise的错误
