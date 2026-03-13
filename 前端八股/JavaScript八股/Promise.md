@@ -14,7 +14,7 @@ tags:
 
 **方法**：
 	1. `Promise.resolve()` - 传入普通值会生成新的 fulfilled Promise，传入 Promise 只会透传原对象，状态不变
-	2. `Promise.reject()` - 返回一个 rejected 状态的 Promise
+	2. `Promise.reject()` - 永远返回**新的 rejected 状态 Promise**，拒绝原因就是传入的值
 	3. `Promise.all()` - 并行执行多个 Promise，全部成功返回结果数组（顺序和输入一致），任意一个失败立即返回第一个失败原因
 	4. `Promise.race()` - 多个 Promise 竞速，返回第一个完成（成功 / 失败）的 Promise 结果
 	5. `Promise.allSettled()` - 等待所有 Promise 完成（无论成功 / 失败），返回每个 Promise 的状态和结果
